@@ -34,3 +34,61 @@ Obecnie powszechnie wykorzystuje się języki ze znacznikami do opisania dodatko
 1. html – służącym do opisu struktury informacji zawartych na stronach internetowych,
 2. Tex (Latex) – poznany na zajęciach język do „profesjonalnego” składania tekstów,
 3. XML (Extensible Markup Language) - uniwersalnym języku znaczników przeznaczonym do reprezentowania różnych danych w ustrukturalizowany sposób.
+   
+   Przykład kodu _html_ i jego interpretacja w przeglądarce:
+"
+
+`<!DOCTYPE html>`                                       
+
+`<html>`
+
+`<head>`
+
+`<meta charset="utf-8" />`
+
+`<title>Przykład</title>`
+
+`</head>`
+
+`<body>`
+
+`<p> Jakiś paragraf tekstu</p>`
+
+`</body>`
+
+`</html>`
+
+ ![alt](Aspose.Words.6c293c22-22c9-4077-926c-4deb54635b92.001.png)
+
+
+Przykład kodu Latex i wygenerowanego pliku w formacie pdf
+
+\documentclass[]{letter}
+
+\usepackage{lipsum}
+
+\usepackage{polyglossia}
+
+\setmainlanguage{polish}
+
+\begin{document}
+
+\begin{letter}{Szanowny Panie XY}
+
+\address{Adres do korespondencji}
+
+\opening{}
+
+\lipsum[2]
+
+\signature{Nadawca}
+
+\closing{Pozdrawiam}
+
+\end{letter}
+
+\end{document}
+
+
+ ![alt](Aspose.Words.6c293c22-22c9-4077-926c-4deb54635b92.002.png)
+
