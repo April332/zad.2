@@ -151,3 +151,41 @@ Wszystkie te języki znaczników cechują się rozbudowaną i złożoną składn
 
 Podany link: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet zawiera opis podstawowych elementów składni w języku angielskim. Poniżej zostanie przedstawiony ich krótki opis w języku polskim.
 
+### Definiowanie nagłówków
+W tym celu używamy znaku kratki
+Lewe okno zawiera kod źródłowy – prawe -podgląd przetworzonego tekstu
+
+![alt](Aspose.Words.6c293c22-22c9-4077-926c-4deb54635b92.004.jpeg)
+
+
+### Definiowanie list
+![alt](Aspose.Words.6c293c22-22c9-4077-926c-4deb54635b92.005.jpeg)
+
+Listy numerowane definiujemy wstawiając numery kolejnych pozycji zakończone kropką.
+
+Listy nienumerowane definiujemy znakami: *,+,-
+
+### Wyróżnianie tekstu
+![alt](Aspose.Words.6c293c22-22c9-4077-926c-4deb54635b92.006.png)
+### Tabele
+![alt](Aspose.Words.6c293c22-22c9-4077-926c-4deb54635b92.007.png)
+
+Centrowanie zawartości kolumn realizowane jest poprzez odpowiednie użycie znaku dwukropka:
+
+### Odnośniki do zasobów
+
+[odnośnik do zasobów](www.gazeta.pl pl)
+
+[odnośnik do pliku](LICENSE.md)
+
+[odnośnik do kolejnego zasobu][1]
+
+[1]: http://google.com
+`[1]:http://google.com`
+
+#### Obrazki
+
+`![alt text](https://server.com/images/icon48.png "Logo 1")` – obrazek z zasobów internetowych
+
+`![](logo.png)` – obraz z lokalnych zasobów
+
