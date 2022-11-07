@@ -63,32 +63,91 @@ Obecnie powszechnie wykorzystuje się języki ze znacznikami do opisania dodatko
 
 Przykład kodu Latex i wygenerowanego pliku w formacie pdf
 
-\documentclass[]{letter}
+`\documentclass[]{letter}`
 
-\usepackage{lipsum}
+`\usepackage{lipsum}`
 
-\usepackage{polyglossia}
+`\usepackage{polyglossia}`
 
-\setmainlanguage{polish}
+`\setmainlanguage{polish}`
 
-\begin{document}
+`\begin{document}`
 
-\begin{letter}{Szanowny Panie XY}
+`\begin{letter}{Szanowny Panie XY}`
 
-\address{Adres do korespondencji}
+`\address{Adres do korespondencji}`
 
-\opening{}
+`\opening{}`
 
-\lipsum[2]
+`\lipsum[2]`
 
-\signature{Nadawca}
+`\signature{Nadawca}`
 
-\closing{Pozdrawiam}
+`\closing{Pozdrawiam}`
 
-\end{letter}
+`\end{letter}`
 
-\end{document}
+`\end{document}`
 
 
  ![alt](Aspose.Words.6c293c22-22c9-4077-926c-4deb54635b92.002.png)
+
+
+ Przykład kodu *XML* – fragment dokumentu SVG (Scalar Vector Graphics)
+
+
+`<!DOCTYPE html>`
+
+`<html>`
+
+`<body>`
+
+`<svg height="100" width="100">`
+
+`<circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />`
+
+`</svg>`
+
+`</body>`
+
+`</html>`
+
+
+
+![alt](Aspose.Words.6c293c22-22c9-4077-926c-4deb54635b92.003.png)
+
+
+W tym przypadku mamy np. znacznik np. `<circle>` opisujący parametry koła i który może być właściwie zinterpretowany przez dedykowaną aplikację (np. przeglądarki www).
+Jako ciekawostkę można podać fakt, że również pakiet MS Office wykorzystuje format XML do przechowywania informacji o dodatkowych parametrach formatowania danych. Na przykład pliki z rozszerzeniem docx, to nic innego jak spakowane algorytmem zip katalogi z plikami xml.
+
+Archive: test.docx
+Length Date Time Name
+--------- ---------- ----- ----
+573 2022-03-20 08:55 _rels/.rels
+
+731 2022-03-20 08:55 docProps/core.xml
+
+508 2022-03-20 08:55 docProps/app.xml
+
+531 2022-03-20 08:55 word/_rels/document.xml.rels
+
+1288 2022-03-20 08:55 word/document.xml
+
+2429 2022-03-20 08:55 word/styles.xml
+
+853 2022-03-20 08:55 word/fontTable.xml
+
+257 2022-03-20 08:55 word/settings.xml
+
+1374 2022-03-20 08:55 [Content_Types].xml
+
+Wszystkie te języki znaczników cechują się rozbudowaną i złożoną składnią i dlatego do ich edycji wymagają najczęściej dedykowanych narzędzi w postaci specjalizowanych edytorów. By wyeliminować powyższą niedogodność powstał **Markdown** - uproszczony język znaczników służący do formatowania dokumentów tekstowych (bez konieczności używania specjalizowanych narzędzi). Dokumenty w tym formacie można bardzo łatwo konwertować do wielu innych formatów: np. html, pdf, ps (postscript), epub, xml i wiele innych. Format ten jest powszechnie używany do tworzenia plików README.md (w projektach open source) i powszechnie obsługiwany przez serwery git’a. Język ten został stworzony w 2004 r. a jego twórcami byli John Gruber i Aaron Swartz. W kolejnych latach podjęto prace w celu stworzenia standardu rozwiązania i tak w 2016 r. opublikowano dokument RFC 7764 który zawiera opis kilku odmian tegoż języka:
+
+* CommonMark,
+* GitHub Flavored Markdown (GFM),
+* Markdown Extra.
+
+## Podstawy składni
+
+Podany link: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet zawiera opis podstawowych elementów składni w języku angielskim. Poniżej zostanie przedstawiony ich krótki opis w języku polskim.
 
